@@ -8,7 +8,7 @@ function appendToList(){
 	var todo = document.createElement('li');
 	todo.textContent = input.value;
 	parentList.appendChild(todo);
-	input.textContent = "";
+	input.value = "";
 	}
 	
 }
