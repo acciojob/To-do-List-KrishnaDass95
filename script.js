@@ -4,9 +4,13 @@ var input = document.getElementById('newTodoInput');
 var parentList = document.getElementById('todoList');
 
 function appendToList(){
+	if(input.value){
 	var todo = document.createElement('li');
 	todo.textContent = input.value;
 	parentList.appendChild(todo);
+	input.textContent = "";
+	}
+	
 }
 // add event listener to button
 button.addEventListener('click', appendToList)
